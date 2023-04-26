@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations ARCADE</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+         <!--relier police d'ecriture-->
+         <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Kenia&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+        <script type="text/javascript" src="app.js"></script>
+ </head>
+<body class="reservation"> 
+
+    <header>
+      <!--Barre de navigation-->
+      <nav class="barre">
+        <a href="index.html" type="button"><h1><span class="letter">A</span>RCADE</h1></a>
+         <div class="onglets">
+             <p><a href="index.html" type="button">Home</a></p>
+             <p ><a href="about.html" type="button">About</a></p>
+             <p ><a href="reservation.html" type="button">Reservations</a></p>
+             <p ><a href="contact.html" type="button">Contact</a></p>
+            <form>
+                <input type="search" placeholder="Rechercher">
+            </form>
+            <p><a href="login.html" type="button"><i class="fa fa-user"></i></a></p>
+            <p><a href="panier.html" type="button"><i class="far fa-heart"></i></a></p>
+            <p><a href="panier.html" type="button"><i class="fas fa-shopping-cart"></i></a></p>
+         </div>
+     </nav>
+     <!--fin de la barre -->
+      <video autoplay loop>
+        <source src="image/Houston Commercial Videographer - Artisans Restaurant.mp4" muted type="video/mp4">
+        <h1>RESERVATIONS</h1>
+        <h4>" We accept a limited number of reservations up to one</h4>
+        <br>
+        <h4> month in advance for parties of up to ten guests "</h4>
+      </video>
+     <section class="header-reservation">
+        <h1>RESERVATIONS</h1>
+        <h4>" We accept a limited number of reservations up to one</h4>
+        <br>
+        <h4> month in advance for parties of up to ten guests "</h4>
+      </section>
+
+    </header>
+<section>
+  <div id="message">
+    **all fields are mandatory
+  </div>
+    <div name="resform" id="form" class="container-reservation">
+        <legend><h2>MAKE A RESERVATION </h2></legend>
+        
+        
+        <input class="res" id="nom" type="text" required maxlength="20" placeholder="Name..." required  >
+        <p id="errorNR" class="error"></p>
+        <input class="res" id="numero" type ="phonenumber" name="phonenumber" placeholder="12-345-678" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}" maxlength="10" title="SVP saisir un num de la forme suivante : 12-345-678 " required >
+        <p id="errorNUM" class="error"></p>
+
+        </br>
+
+        <input class="res" id="ddn" type="date"  name="date"  required maxlength="20" min="2002/01/01" required  >
+        <p id="errorddn" class="error"></p>
+        
+        <select class="res" id="numperson">
+        <option >2 people</option>
+        <option >4 people</option>
+        <option >6 people</option>
+        <option >8 people</option>
+        <option >10 people</option></select>
+        </br>
+        <p id="errornumperson" class="error"></p>        
+        
+
+        <select class="res" id="time">
+            <option >12 a.m</option>
+            <option >2 p.m</option>
+            <option >4 p.m</option>
+            <option >6 p.m</option>
+            <option >8 p.m</option>
+           </select></br>
+           <p id="errortime" class="error"></p>
+        
+        <a  type="button" onclick="envoyer()" class="cta">Find a table</a>
+    </div>
+</section>
+</body>
+<footer>
+  <div class="locations">
+      <div class="lo"><h1>LOCATIONS</h1></div>
+      <div class="location">
+        <p  class="city">BROOKLYN</p>
+        <p class="adresse">123 Demo Street <br> New York,NY 12345<br>
+            (555) 555-555 <br>Monday-Sunday<br>10am-10pm</p>
+        </div>
+
+      <div class="location">
+        <p  class="city">QUEENS</p>
+        <p class="adresse">123 Demo Street <br> New York,NY 12345<br>
+            (555) 555-555 <br>Monday-Sunday<br>10am-10pm</p>
+        </div>
+
+    <div class="location">
+        <p class="city">FOOD-TRUCK</p>
+            <p class="adresse">123 Demo Street <br> New York,NY 12345<br>
+           (555) 555-555 <br>Monday-Sunday<br>10am-10pm</p>
+        </div>
+
+    <div class="location">
+        <div class="icons">
+        <div class="icon">
+          <a href="https://www.facebook.com"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="icon">
+          <a href="https://www.instagram.com/"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="icon">
+          <a href="https://twitter.com/"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+        </div>
+        <div class="icon">
+          <a href="https://www.behance.net/"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <span class="arcade"><p>ARCADE RESTAURANT ©2022</p><p> All rights reserved</p></span>
+    </div>
+</div>
+</footer>
+</html>

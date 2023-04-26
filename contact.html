@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Kenia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>CONTACT US</title>
+
+   <!-- <link rel="stylesheet" type="text/css" href="style.css">-->
+   <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Kenia&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+   <script type="text/javascript" src="app.js"></script>
+</head>
+<body class="contact">
+    <header>
+        <!--Barre de navigation-->
+        <nav class="barre">
+            <a href="index.html" type="button"><h1><span class="letter">A</span>RCADE</h1></a>
+             <div class="onglets">
+                 <p><a href="index.html" type="button">Home</a></p>
+                 <p ><a href="about.html" type="button">About</a></p>
+                 <p ><a href="reservation.html" type="button">Reservations</a></p>
+                 <p ><a href="contact.html" type="button">Contact</a></p>
+                <form>
+                    <input type="search" placeholder="Rechercher">
+                </form>
+                <p><a href="login.html" type="button"><i class="fa fa-user"></i></a></p>
+                <p><a href="panier.html" type="button"><i class="far fa-heart"></i></a></p>
+                <p><a href="panier.html" type="button"><i class="fas fa-shopping-cart"></i></a></p>
+             </div>
+         </nav>
+         <!--fin de la barre -->
+    </header>
+    <div class="container0">
+        <table>
+            <td>
+                <ion-icon name="location-outline"></ion-icon>
+            </td>
+            <td>
+                <p>
+                    ARCADE at The Green House
+                    <br> 4 Grove Road
+                    <br> Bournemouth
+                    <br> BH1 3AX
+               </p>  
+            </td>
+           <td>
+               <p><ion-icon name="call-outline"></ion-icon>
+                    +216 12 345 678
+                    <br>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <a href="">ARCADE.restaurant@gmail.com</a> 
+             </p>
+         </td>
+           <td>
+            <img src="image/arcade1.png" alt="logo">
+           </td> 
+
+        </table>
+    </div>
+
+    <div class="container">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13249.247068040606!2d151.20960562674117!3d-33.8816236491114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1468899355787" width="100%" height="750px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="contact-form">
+            <h1 class="title-contact">Contact Us</h1>
+            <h2 class="subtitle">We are here assist you.</h2>
+            <form name="myForm" onsubmit="return validateForm(event)" method="post" action="">
+                <input type="text" name="name" placeholder="Your Name" />
+                <span class="required">*</span>
+                <p class="error" id="errorname"></p>
+                <input type="email" name="email" placeholder="Your E-mail Adress" />
+                <span class="required">*</span>
+                <p class="error" id="erroremail"></p>
+                <input type="tel" name="phone" placeholder="Your Phone Number"/>
+                <p class="error" id="errornumber"></p>
+                
+                <select>
+                    <option >Comments and Issues</option>
+                    <option >Opinion</option>
+                    <option >Complaints</option><br>
+                </select>
+                <textarea name="Message" id="" rows="8" placeholder="Your Message"></textarea>
+                <span class="required">*</span>
+                <p class="error" id="errormsg"></p>
+                <button class="btn-send">Get A Call Back</button>
+            </form>
+        </div>
+    </div> 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+</body>
+
+
+<footer>
+    <div class="locations">
+        <div class="lo"><h1>LOCATIONS</h1></div>
+        <div class="location">
+          <p  class="city">BROOKLYN</p>
+          <p class="adresse">123 Demo Street <br> New York,NY 12345<br>
+              (555) 555-555 <br>Monday-Sunday<br>10am-10pm</p>
+          </div>
+
+        <div class="location">
+          <p  class="city">QUEENS</p>
+          <p class="adresse">123 Demo Street <br> New York,NY 12345<br>
+              (555) 555-555 <br>Monday-Sunday<br>10am-10pm</p>
+          </div>
+
+      <div class="location">
+          <p class="city">FOOD-TRUCK</p>
+              <p class="adresse">123 Demo Street <br> New York,NY 12345<br>
+             (555) 555-555 <br>Monday-Sunday<br>10am-10pm</p>
+          </div>
+
+      <div class="location">
+          <div class="icons">
+          <div class="icon">
+            <a href="https://www.facebook.com"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+          </div>
+          <div class="icon">
+            <a href="https://www.instagram.com/"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+          </div>
+          <div class="icon">
+            <a href="https://twitter.com/"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+          </div>
+          <div class="icon">
+            <a href="https://www.behance.net/"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+          </div>
+        </div>
+        <span class="arcade"><p>ARCADE RESTAURANT ©2022</p><p> All rights reserved</p></span>
+      </div>
+  </div>
+</footer>
+</html>

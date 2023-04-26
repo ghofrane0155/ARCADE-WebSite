@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title> ARCADE-Restaurant</title>
+        <meta charset="utf-8">
+        <!--relier fichier css-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+         <!--relier police d'ecriture-->
+         <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Kenia&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+  </head>
+  <body class="login">    
+     <header>
+      <!--Barre de navigation-->
+      <nav class="barre">
+        <a href="index.html" type="button"><h1><span class="letter">A</span>RCADE</h1></a>
+         <div class="onglets">
+             <p><a href="index.html" type="button">Home</a></p>
+             <p ><a href="about.html" type="button">About</a></p>
+             <p ><a href="reservation.html" type="button">Reservations</a></p>
+             <p ><a href="contact.html" type="button">Contact</a></p>
+            <form>
+                <input type="search" placeholder="Rechercher">
+            </form>
+            <p><a href="login.html" type="button"><i class="fa fa-user"></i></a></p>
+            <p><a href="panier.html" type="button"><i class="far fa-heart"></i></a></p>
+            <p><a href="panier.html" type="button"><i class="fas fa-shopping-cart"></i></a></p>
+         </div>
+     </nav>
+     </header>
+      <!--fin de la barre -->
+
+   <div class="container-login">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="#" class="sign-in-form">
+                    <h2 class="title-sign">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="username" id="user"/>
+                    </div>
+                    <p id="erroru"></p>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" id="pass"/>
+                    </div>
+                    <p id="errorp"></p>
+
+                    <input type="submit" class="bouton solid" onclick="verif_signin()" value="login"/>
+                    <p class="social-text">Or sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.txitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.google.com" target="_blank" class="social-icon"><i class="fab fa-google"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="signup-signup">
+                <form action="#" class="sign-up-form">
+                    <h2 class="title-sign">Sign Up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" id="username"/>
+                    </div>
+                    <p id="erroruup"></p>
+
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" id="email"/>
+                    </div>
+                    <p id="erroreup"></p>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" id="password" onkeyup="verif_signup()"/>            
+                    </div>
+                    <p id="errorpup"></p>
+
+                    <input type="submit" class="bouton solid" value="login" onclick="verif_signup()"/>
+                    <p class="social-text">Or sign Up with social platforms</p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.txitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.google.com" target="_blank" class="social-icon"><i class="fab fa-google"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </form>
+            </div>  
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New Here?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque, diam id venenatis dapibus</p>
+                    <br><button class="bouton transparent" id="sign-up-button" >Sign Up</button>
+                </div>
+                <img src="image/login2.gif" alt="" class="img-login">
+            </div>
+
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>One of us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque, diam id venenatis dapibus</p>
+                    <br><button class="bouton transparent" id="sign-in-button" >Sign In</button>
+                </div>
+                <img src="image/login.png" alt="" class="img-login">
+            </div>
+        </div>
+    </div>
+
+    
+ <script src="app.js"></script>
+ </body>
+ <footer>
+    <div class="locations">
+        <div class="lo"><h1>LOCATIONS</h1></div>
+        <div class="location">
+          <p  class="city">BROOKLYN</p>
+          <p class="adresse">123 Demo Street <br> New York,NY 12345<br>
+              (555) 555-555 <br>Monday-Sunday<br>10am-10pm</p>
+          </div>
+
+        <div class="location">
+          <p  class="city">QUEENS</p>
+          <p class="adresse">123 Demo Street <br> New York,NY 12345<br>
+              (555) 555-555 <br>Monday-Sunday<br>10am-10pm</p>
+          </div>
+
+      <div class="location">
+          <p class="city">FOOD-TRUCK</p>
+              <p class="adresse">123 Demo Street <br> New York,NY 12345<br>
+             (555) 555-555 <br>Monday-Sunday<br>10am-10pm</p>
+          </div>
+
+      <div class="location">
+          <div class="icons">
+          <div class="icon">
+            <a href="https://www.facebook.com"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+          </div>
+          <div class="icon">
+            <a href="https://www.instagram.com/"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+          </div>
+          <div class="icon">
+            <a href="https://twitter.com/"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+          </div>
+          <div class="icon">
+            <a href="https://www.behance.net/"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+          </div>
+        </div>
+        <span class="arcade"><p>ARCADE RESTAURANT ©2022</p><p> All rights reserved</p></span>
+      </div>
+  </div>
+</footer>
+
+</html>
